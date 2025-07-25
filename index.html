@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>العودة للمدارس - تسوق الآن</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* شريط العروض */
+    .announcement-bar {
+      background-color: #ff5722;
+      color: white;
+      padding: 10px 0;
+      font-weight: bold;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .announcement-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scrollText 15s linear infinite;
+      padding-right: 100%;
+    }
+
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    header {
+      background: linear-gradient(to left, #2196f3, #21cbf3);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #fff;
+      color: #2196f3;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: #e3f2fd;
+    }
+
+    section.gallery {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section.gallery h2 {
+      margin-bottom: 2rem;
+      color: #2196f3;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط الإعلانات -->
+  <div class="announcement-bar">
+    <div class="announcement-text">
+      🌟 خصومات حصرية على شنط المدارس! - 👕 ملابس أطفال بجودة عالية! - ✏️ أدوات مدرسية أصلية بأسعار رائعة! 🌟
+    </div>
+  </div>
+
+  <header>
+    <h1>استعد للمدرسة معانا!</h1>
+    <p>شنط - ملابس - أدوات مدرسية بأفضل الأسعار في السعودية</p>
+    <a href="https://t.me/+7EiVquXGn7g3MDM8" class="btn" target="_blank">احجز الآن</a>
+  </header>
+
+  <section class="gallery">
+    <h2>منتجاتنا المميزة</h2>
+    <div class="image-grid">
+      <img src="01.jpeg" alt="منتج 1">
+      <img src="02.jpeg" alt="منتج 2">
+      <img src="03.jpeg" alt="منتج 3">
+      <img src="04.jpeg" alt="منتج 4">
+      <img src="05.jpeg" alt="منتج 5">
+      <img src="06.jpeg" alt="منتج 6">
+      <img src="07.jpeg" alt="منتج 7">
+      <img src="08.jpeg" alt="منتج 8">
+      <img src="09.jpeg" alt="منتج 9">
+      <img src="10.jpeg" alt="منتج 10">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 متجر العودة للمدارس - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
